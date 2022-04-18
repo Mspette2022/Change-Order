@@ -1,0 +1,20 @@
+body {
+    background-image: radial-gradient(#1a01f8, #9000f0);
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+}
+h1 {    
+    color: azure;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    color: rgb(244, 241, 242);
+    size: 100px;
+    background-color: crimson;
+    border-radius: 600px;
+}

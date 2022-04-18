@@ -1,0 +1,113 @@
+<!DOCTYPE j>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="Background.css" media="screen" />
+     <div style="text-align:center;"> 
+    <img src="UATspaceLogo-2.jpg" alt="">
+     </div>
+    <title>Mission Control</title>
+      <!--This is my CSS style for the webpage-->
+      <style>
+       
+       h1 {text-align: center;}
+        h2 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        .button {text-align: center;
+        cursor: pointer;
+        padding: 10px;
+        background: coral;
+        border-radius: 10%;
+        width: 20%;
+        display: block;
+        margin: auto;
+    }
+        img {object-position: center;}
+        #countdownTimer{color: rgb(253, 250, 250);}
+        
+      
+</style>
+
+       
+       </style>
+     
+     
+     
+
+</head>
+
+<body>
+<!--These are the triggers for the events-->
+   
+
+   
+
+
+    <script>
+        // The script tags lets the browser know we are in JavaScript and not HTML
+        function whileCount()
+                      {
+                          var currTime = 10;
+                          var i = 1;
+                          while (i < 12)
+                          {
+
+
+                              if (i == 11)
+                              { //  alert("i = 11")
+                                  setTimeout(function ()
+                                  {
+                                      //code goes here for timer
+                                      document.getElementById("countdownTimer").innerHTML = "Blastoff!!!";
+                                  }, 1000 * i);
+                              } else if (i > 6)
+                              {
+                                  setTimeout(function ()
+                                  {
+                                      document.getElementById("countdownTimer").innerHTML =
+                                          "Warning Less than half way to launch, time left = " + currTime;
+                                      currTime = currTime - 1;
+                                  }, 1000 * i);
+                              } else
+                              {
+                                  setTimeout(function ()
+                                  {
+                                      document.getElementById("countdownTimer").innerHTML = "the time left is " + currTime;
+                                      currTime = currTime - 1;
+                                  }, 1000 * i);
+                              }
+                              i = i + 1;
+                          }
+                      }
+
+       </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <h1> 
+    Rocket Blast Off! 
+        </h1>
+    <!--This is my colors and fonts for our h1 heading-->
+    <p>This application will start the countdown for Blast Off!</p>
+    <h2>
+        Countdown timer
+    </h2>
+    <!--This is a button to start the 
+    StartTheCountdown()countdown when the user clicks it-->
+    <div class="center">
+        <p class="button" onclick="whileCount();">Start Countdown</p>
+<!--This is the key HTML element aka tag which we will be updating during the 
+    countdown-->
+    </div>
+   <br>
+   <br>
+    <div id="countdownTimer"></div>
+
+
+</body>
+</html>
